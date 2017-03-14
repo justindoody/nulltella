@@ -12,3 +12,16 @@ class SuperCoolClass < ActiveRecord::Base
   end
 end
 ```
+
+
+```ruby
+# en.yml
+# ...
+en
+  model:
+    super_cool_class:
+      date:
+        nulls: this text is dateless
+```
+
+In a view calling `l @obj.date` would now render the null class text when 'date' is nil.
